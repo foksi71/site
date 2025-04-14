@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMM SHELL</title>
+
+  <!-- SEO -->
+  <meta name="description" content="SMM SHELL — просування в соцмережах: лайки, підписки, перегляди, коментарі. Жива аудиторія, активність, охоплення.">
+  <meta name="keywords" content="накрутка, лайки, підписники, перегляди, коментарі, smm, smm shell, instagram, telegram, tiktok">
+  <meta name="author" content="SMM SHELL">
+
+  <!-- AOS animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #4e0066, #a366c1);
+      color: white;
+      line-height: 1.6;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    .block {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    a {
+      color: #ffccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .social-item img {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 5px;
+    }
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .active {
+      display: block;
+    }
+    .slider-buttons {
+      margin-top: 15px;
+    }
+    .slider-buttons button {
+      background-color: #ffffff22;
+      border: none;
+      color: white;
+      font-size: 22px;
+      margin: 0 12px;
+      padding: 6px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .slider-buttons button:hover {
+      background-color: #ffffff44;
+    }
+    .underline {
+      border-bottom: 1px solid #ccc;
+    }
+    @media (max-width: 600px) {
+      .block {
+        padding: 20px;
+        margin: 10px;
+      }
+      .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1 data-aos="fade-down">Жива аудиторія з SMM SHELL</h1>
+
+    <div class="block" data-aos="fade-up">
+      <h2>Наші послуги</h2>
+      <p><span class="underline">Лайки</span>, <span class="underline">підписники</span>, <span class="underline">перегляди</span>, <span class="underline">коментарі</span> — усе, щоб прокачати вашу присутність у соцмережах.</p>
+    </div>
+
+    <div class="block" data-aos="zoom-in">
+      <h2>Прайс</h2>
+      <p>🔹 Підписники — 1.2 грн/шт</p>
+      <p>🔹 Лайки / Реакції — 0.7 грн/шт</p>
+      <p>🔹 Репости / Коментарі — 2 грн/шт</p>
+      <p>🔹 Перегляди — 0.2 грн/шт</p>
+      <p>🔹 Верифікації — 50% від реферала</p>
+      <p>🔹 Відгук у сторіс / в особисті — 2 грн</p>
+      <p>🔹 Google Maps — 10 грн/шт</p>
+    </div>
+
+    <div class="block" data-aos="fade-right">
+      <h2>Соцмережі</h2>
+      <div class="social-grid">
+        <div class="social-item"><img src="image/telegram-icon.png" alt="Telegram"><span>Telegram</span></div>
+        <div class="social-item"><img src="image/instagram-icon.png" alt="Instagram"><span>Instagram</span></div>
+        <div class="social-item"><img src="image/tiktok-icon.png" alt="TikTok"><span>TikTok</span></div>
+        <div class="social-item"><img src="image/youtube-icon.png" alt="YouTube"><span>YouTube</span></div>
+        <div class="social-item"><img src="image/facebook-icon.png" alt="Facebook"><span>Facebook</span></div>
+        <div class="social-item"><img src="image/viber-icon.png" alt="Viber"><span>Viber</span></div>
+      </div>
+    </div>
+
+    <div class="block" data-aos="flip-left">
+      <h2>Відгуки</h2>
+      <div class="slider">
+        <div class="slide active"><img src="image/photo1.jpg" alt="Відгук 1" onerror="this.style.display='none';"></div>
+        <div class="slide"><img src="image/photo2.jpg" alt="Відгук 2" onerror="this.style.display='none';"></div>
+        <div class="slide"><img src="image/photo3.jpg" alt="Відгук 3" onerror="this.style.display='none';"></div>
+        <div class="slide"><img src="image/photo4.jpg" alt="Відгук 4" onerror="this.style.display='none';"></div>
+        <div class="slider-buttons">
+          <button onclick="prevSlide()">‹</button>
+          <button onclick="nextSlide()">›</button>
+        </div>
+      </div>
+      <p style="margin-top: 20px;">Більше відгуків — у <a href="https://instagram.com/Smm_shell" target="_blank">Instagram</a> 💜</p>
+    </div>
+
+    <div class="block" data-aos="slide-up">
+      <h2>Зв'язок</h2>
+      <p>Instagram: <a href="https://instagram.com/Smm_shell" target="_blank">@Smm_shell</a></p>
+      <p>Telegram: <a href="https://t.me/ameliska_a" target="_blank">@ameliska_a</a></p>
+    </div>
+  </div>
+
+  <!-- Слайдер -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  </script>
+
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false
+    });
+  </script>
+</body>
+</html>
